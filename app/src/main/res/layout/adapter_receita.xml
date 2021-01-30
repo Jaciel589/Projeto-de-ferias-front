@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardElevation="10dp"
+    tools:layout_editor_absoluteX="6dp"
+    tools:layout_editor_absoluteY="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Receita: Pudim chocolate"
+            android:textColor="@color/colorVermelho"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="389dp"
+            android:layout_height="257dp"
+            android:layout_marginTop="10dp"
+            android:padding="20px"
+            android:text="bolo pudim"
+            android:textColor="@color/colorVermelho"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonEditarReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@color/colorVermelho"
+                android:text="editar"
+                android:textColor="@color/colorBranco" />
+
+            <Button
+                android:id="@+id/buttonExcluirReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@color/colorVermelho"
+                android:text="excluir"
+                android:textColor="@color/colorBranco" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
